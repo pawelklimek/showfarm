@@ -33,7 +33,6 @@ const NavigationItem = styled.li`
   :last-child:after{
     display: none;
   }
-}
 :hover {
   color: #798CA5;
 }
