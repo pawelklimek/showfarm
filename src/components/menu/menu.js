@@ -38,7 +38,6 @@ const NavigationItem = styled.li`
 }
   padding-left: 20px;
 `
-
 const Menu = () => (
   <>
     <MenuDiv>
