@@ -1,7 +1,7 @@
 import React from "react"
 import {theme} from "./theme"
 import styled from "styled-components"
-import { createGlobalStyle, ThemeProvider} from "styled-components"
+import {createGlobalStyle, ThemeProvider} from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -11,8 +11,8 @@ const GlobalStyle = createGlobalStyle`
   color: ${({theme}) => theme.colors.white} 
   background: ${({theme}) => theme.colors.black} 
   }`;
-const Div= styled.div`
-height: 100vh;
+const Div = styled.div`
+  height: 100vh;
 `;
 
 const Layout = ({children}) => (

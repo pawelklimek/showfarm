@@ -4,8 +4,8 @@ import {Link} from "gatsby"
 
 const NavigationWrapper = styled.ul`
   display: flex;
-  align-self: center;
-  justify-self: self-end;
+  justify-content: flex-end;
+  align-items: center;
   flex: 1;
 `;
 const StyledLink = styled.span`
@@ -13,7 +13,7 @@ const StyledLink = styled.span`
   text-decoration: none;
   margin-right: 2rem;
   font-size: 1.4em;
-  font-weight: ${({theme}) => theme.font.thin};
+  font-weight: ${({theme, test}) =>  test ? theme.font.regular : theme.font.extraThin };
   color: ${({theme}) => theme.colors.white};
 ::before {
   content: '';
@@ -37,12 +37,13 @@ const StyledLink = styled.span`
 const MenuNav = () => (
     <>
         <NavigationWrapper>
-            <StyledLink as={Link} to="/">Aktualnosci</StyledLink>
-            <StyledLink as={Link} to="/kontakt">Psy</StyledLink>
-            <StyledLink as={Link} to="/kontakt">Szczeniaki</StyledLink>
-            <StyledLink as={Link} to="/">Galeria</StyledLink>
-            <StyledLink as={Link} to="/kontakt">Wystawy</StyledLink>
-            <StyledLink as={Link} to="/kontakt">Kontakt</StyledLink>
+            <StyledLink test as={Link} to="/">Showfarm</StyledLink>
+            <StyledLink as={Link} to="/news">Aktualnosci</StyledLink>
+            <StyledLink as={Link} to="/dogs">Psy</StyledLink>
+            <StyledLink as={Link} to="/pupies">Szczeniaki</StyledLink>
+            <StyledLink as={Link} to="/gallery">Galeria</StyledLink>
+            <StyledLink as={Link} to="/dog-show">Wystawy</StyledLink>
+            <StyledLink as={Link} to="/contact">Kontakt</StyledLink>
             {/*<MenuLanguage/>*/}
         </NavigationWrapper>
     </>

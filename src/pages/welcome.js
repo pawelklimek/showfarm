@@ -13,7 +13,6 @@ font-weight: ${({theme}) => theme.font.extraThin};
 color: ${({theme}) => theme.colors.white};
 `;
 
-
 const HeaderStyle = styled.p`
 animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 @keyframes tracking-in-expand {

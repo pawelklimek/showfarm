@@ -1,9 +1,8 @@
 import React from "react"
+import styled from "styled-components"
 import Layout from "../layout/layout";
 import MenuWrapper from "../components/menu-wrapper/menu-wrapper";
-import WelcomePage from "./welcome";
-import styled from "styled-components"
-import img from '../images/dogs/1.jpg';
+import img from "../images/dogs/7.jpg";
 
 const ImageBackGroundStyle = styled.div`
   height:100%;
@@ -14,14 +13,13 @@ const ImageBackGroundStyle = styled.div`
   -o-background-size: cover;
   background-size: cover;
 `;
-
-const IndexPage = () => (
-  <Layout>
-      <ImageBackGroundStyle>
-      <MenuWrapper/>
-      <WelcomePage/>
-      </ImageBackGroundStyle>
-  </Layout>
+const PuppiesPage = () => (
+    <Layout>
+        <ImageBackGroundStyle>
+            <MenuWrapper/>
+            Puppies
+        </ImageBackGroundStyle>
+    </Layout>
 );
 
-export default IndexPage
+export default PuppiesPage
