@@ -1,28 +1,29 @@
 import React from "react"
-import { createGlobalStyle } from "styled-components"
-import Header from '../components/header/header.js'
-import Menu from '../components/menu/menu.js'
-import backgroundImage from "../images/allTwo.jpg"
+import Layout from "../layout/layout";
+import MenuWrapper from "../components/menu-wrapper/menu-wrapper";
+import WelcomePage from "./welcome";
+import styled from "styled-components"
+import img from '../images/dogs/allOne.jpg';
 
-const GlobalStyle = createGlobalStyle`
-body {
-padding: 0;
-margin: 0;
-widows: 100vh;
-height: 100vh;
-background-image: url(${backgroundImage});
-background-size: cover;                    
-background-repeat: no-repeat;
-background-position: center;
 
-}
-`
+
+const ImageBackGroundStyle = styled.div`
+  height:100%;
+  width:100%;
+  background: url(${img}) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+`;
+
 const IndexPage = () => (
-  <>
-    <GlobalStyle/>
-    <Menu></Menu>
-    <Header></Header>
-  </>
-)
+  <Layout>
+      <ImageBackGroundStyle>
+      <MenuWrapper/>
+      <WelcomePage/>
+      </ImageBackGroundStyle>
+  </Layout>
+);
 
 export default IndexPage
