@@ -4,21 +4,23 @@ import {Link} from "gatsby"
 
 const NavigationWrapper = styled.ul`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex: 1;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
 `;
 const StyledLink = styled.span`
   position: relative;
   text-decoration: none;
   margin-right: 2rem;
   font-size: 1.4em;
-  font-weight: ${({theme, test}) =>  test ? theme.font.regular : theme.font.extraThin };
-  color: ${({theme}) => theme.colors.white};
+  font-weight: ${({theme }) => theme.font.extraThin };
+  color: ${({theme}) => theme.colors.black};
 ::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   right: 0;
   height: 2px;
@@ -37,14 +39,12 @@ const StyledLink = styled.span`
 const MenuNav = () => (
     <>
         <NavigationWrapper>
-            <StyledLink test as={Link} to="/">Showfarm</StyledLink>
             <StyledLink as={Link} to="/news">Aktualnosci</StyledLink>
             <StyledLink as={Link} to="/dogs">Psy</StyledLink>
             <StyledLink as={Link} to="/pupies">Szczeniaki</StyledLink>
             <StyledLink as={Link} to="/gallery">Galeria</StyledLink>
             <StyledLink as={Link} to="/dog-show">Wystawy</StyledLink>
             <StyledLink as={Link} to="/contact">Kontakt</StyledLink>
-            {/*<MenuLanguage/>*/}
         </NavigationWrapper>
     </>
 )

@@ -17,10 +17,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
+
         fonts: [
           {
             family: `Montserrat`,
             variants: [`200`,`300`,`400`,`500`,`600`,`700`]
+          },
+          {
+             family: `Raleway`,
+           variants: [`200`,`300`,`400`,`500`,`600`,`700`]
           }
         ],
       },

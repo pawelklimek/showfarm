@@ -1,15 +1,22 @@
 import React from "react"
 import styled from "styled-components"
 import MenuNav from "../menu-navi/menu-navi";
+import Logo from "../logo/logo";
 
 const MenuWrapperStyle = styled.div`
   display: flex;
+`;
+
+const LogoWrapperStyle = styled.div`
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 40px;  background: rgba(33,33,33,0.7 );
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 `;
 const MenuWrapper = () => (
     <>
+        <LogoWrapperStyle>
+            <Logo/>
+        </LogoWrapperStyle>
         <MenuWrapperStyle>
             <MenuNav/>
         </MenuWrapperStyle>

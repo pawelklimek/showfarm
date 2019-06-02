@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../layout/layout";
 import MenuWrapper from "../components/menu-wrapper/menu-wrapper";
-import img from "../images/dogs/2.jpg";
+import img from "../images/dogs/pupies-1.jpg";
 
 const ImageBackGroundStyle = styled.div`
   display: flex;

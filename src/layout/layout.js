@@ -8,8 +8,8 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   margin: 0;
   font-family: "Montserrat", serif;
-  color: ${({theme}) => theme.colors.white} 
-  background: ${({theme}) => theme.colors.black} 
+  color: ${({theme}) => theme.colors.black} 
+  background: ${({theme}) => theme.colors.white} 
   }`;
 const Div = styled.div`
   height: 100vh;
