@@ -24,7 +24,7 @@ const StyledLink = styled.span`
   left: 0;
   right: 0;
   height: 2px;
-  background-color: ${({theme}) => theme.colors.blue};
+  background-color: ${({theme}) => theme.colors.brown};
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.5s ease;
@@ -47,5 +47,5 @@ const MenuNav = () => (
             <StyledLink as={Link} to="/contact">Kontakt</StyledLink>
         </NavigationWrapper>
     </>
-)
+);
 export default MenuNav

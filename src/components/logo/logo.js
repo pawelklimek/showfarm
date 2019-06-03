@@ -1,7 +1,11 @@
 import React from "react"
 import styled from "styled-components"
+import {Link} from "gatsby"
+
 const LogoWrapper = styled.div`
-   display: flex;
+   display: flex; 
+   text-decoration: none;
+   color: ${({theme}) => theme.colors.darkGray};
    flex-direction: column;
    justify-content: center;
    align-items: center;
@@ -22,13 +26,13 @@ const Title = styled.h2`
 
 const SubTitle = styled.h4`
   margin: 0;
-  font-weight: 400;
+  font-weight: 200;
   font-family: Raleway;
 `;
 
 const Logo = () => (
     <>
-        <LogoWrapper>
+        <LogoWrapper as={Link} to={"/"}>
             <Title>SHOWFARM</Title>
             <SubTitle>Hodowla Owczarków Australijskich</SubTitle>
         </LogoWrapper>

@@ -7,5 +7,8 @@ export const theme = {
         "thin": 300,
         "regular": 400,
         "bold": 800
+    },
+    media: {
+        tablet: "@media (max-width: 1420px)"
     }
 };
