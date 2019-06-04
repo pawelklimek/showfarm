@@ -10,10 +10,16 @@ const BackgroundStyle = styled.div`
   flex-direction: column;
   align-items: stretch;
 `;
+const GalleryImage  = styled.div`
+`;
+
+
 const ContactPage = () => (
     <Layout>
         <BackgroundStyle>
             <MenuWrapper/>
+            <GalleryImage>
+            </GalleryImage>
         </BackgroundStyle>
     </Layout>
 );

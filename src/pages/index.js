@@ -2,10 +2,10 @@ import React from "react"
 import Layout from "../layout/layout";
 import MenuWrapper from "../components/menu-wrapper/menu-wrapper";
 import styled from "styled-components"
-import puppyImg from "../images/dogs/puppy-4.jpg";
-import bigImg from "../images/dogs/gallery-3.jpg";
-import smallImage from "../images/dogs/gallery-4.jpg";
-import headerImage from "../images/17.jpg";
+import puppyImg from "../images/welcome/puppy.jpg";
+import bigImg from "../images/welcome/dogs.jpg";
+import smallImage from "../images/welcome/dog.jpg";
+import headerImage from "../images/welcome/puppyDark.jpg";
 
 const BackgroundStyle = styled.div`
   height:100%;
@@ -56,7 +56,7 @@ const HeaderTextStyle = styled.div`
 `;
 
 const HeaderStyle = styled(Panel)`
-      flex: 2;
+      flex: 1;
       display: flex;
       flex-direction: column;
       background: url(${(headerImage)})  no-repeat;

@@ -11,10 +11,22 @@ const BackgroundStyle = styled.div`
   align-items: stretch;
 `;
 
+const WrapperRow = styled.div`
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+`;
+
+const Image = styled.div`
+
+`;
+
 const GalleryPage = () => (
     <Layout>
         <BackgroundStyle>
             <MenuWrapper/>
+            <WrapperRow>
+            </WrapperRow>
         </BackgroundStyle>
     </Layout>
 );
