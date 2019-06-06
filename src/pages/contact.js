@@ -4,6 +4,9 @@ import Layout from "../layout/layout";
 import MenuWrapper from "../components/menu-wrapper/menu-wrapper";
 import contactImageBlack from "../images/contact/contactBlack.jpg";
 import contactImage from "../images/contact/contact-1.jpg";
+import facebookIcon from "../images/icons/facebook.svg";
+import instagramIcon from "../images/icons/instagram.svg";
+
 
 const BackgroundStyle = styled.div`
   height:100%;
@@ -61,16 +64,28 @@ const HeaderTextStyle = styled.div`
       @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
 `;
 
+const IconStyle = styled.img`
+     margin-left: 15px;
+     padding-top: 10px;
+     width: 1.5rem;
+     height: 1.5rem;
+    animation:slide-in-fwd-center 1.5s cubic-bezier(.25,.46,.45,.94) 1.5s both;
+    @keyframes slide-in-fwd-center{0%{transform:translateZ(-1400px);opacity:0}100%{transform:translateZ(0);opacity:1}}     cursor: pointer;
+`;
+
 const ContactPage = () => (
     <Layout>
         <BackgroundStyle>
             <MenuWrapper/>
             <WrapperColumn>
                 <ContactStyle>
-                    <HeaderTextStyle showDelay={1.0} showSpeed={0.5} fontWeight={200} fontSize={35}>Karolina Klimek</HeaderTextStyle>
-                    <HeaderTextStyle showDelay={1.2} showSpeed={0.5} fontWeight={200} fontSize={15}>Email: showfarm.kennel@gmail.com</HeaderTextStyle>
-                    <HeaderTextStyle showDelay={1.4} showSpeed={0.5} fontWeight={200} fontSize={15}>Telefon: +48 509 354 704</HeaderTextStyle>
-                    <HeaderTextStyle showDelay={1.6} showSpeed={0.5} fontWeight={100} fontSize={15}>Poznan</HeaderTextStyle>
+                    <HeaderTextStyle showDelay={1.0} showSpeed={0.5} fontWeight={200} fontSize={40}>Karolina Klimek</HeaderTextStyle>
+                    <HeaderTextStyle showDelay={1.2} showSpeed={0.5} fontWeight={200} fontSize={20}>Email: showfarm.kennel@gmail.com</HeaderTextStyle>
+                    <HeaderTextStyle showDelay={1.4} showSpeed={0.5} fontWeight={200} fontSize={20}>Telefon: +48 509 354 704</HeaderTextStyle>
+                    {/*<HeaderTextStyle showDelay={1.5} showSpeed={0.5} fontWeight={200} fontSize={15}>Facebook Messenger</HeaderTextStyle>*/}
+                    {/*<HeaderTextStyle showDelay={1.6} showSpeed={0.5} fontWeight={100} fontSize={15}>Poznan</HeaderTextStyle>*/}
+                    <IconStyle showDelay={1.8} showSpeed={0.5} src={facebookIcon}/>
+                    <IconStyle showDelay={1.7} showSpeed={0.5} src={instagramIcon}/>
                 </ContactStyle>
                 <BigImageStyle/>
             </WrapperColumn>
