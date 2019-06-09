@@ -49,6 +49,7 @@ const Image = styled.div`
     animation:fade-in 1s cubic-bezier(.39,.575,.565,1.000) ${({showDelay})=> showDelay}s both;
     @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
     transition:width 500ms;
+    transition-delay: 2s;
     -webkit-transition:width 500ms;
     -moz-transition:width 500ms;
     :hover {

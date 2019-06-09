@@ -43,8 +43,13 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+   {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "NEWS",
+        fieldName: "news",
+        url: "https://api-euwest.graphcms.com/v1/cjv4zdnu70ehy01ehqt7s9nqw/master",
+      },
+    }
   ],
-}
+};

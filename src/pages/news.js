@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../layout/layout";
 import MenuWrapper from "../components/menu-wrapper/menu-wrapper";
+import News from "../components/news-cms/news-cms";
 
 const BackgroundStyle = styled.div`
   height:100%;
@@ -11,10 +12,33 @@ const BackgroundStyle = styled.div`
   align-items: stretch;
 `;
 
+const newsData = [
+    {
+        date: "31-12-2018",
+        news: "sample news"
+    }, {
+        date: "31-12-2018",
+        news: "sample news"
+    }, {
+        date: "31-12-2018",
+        news: "sample news"
+    }, {
+        date: "31-12-2018",
+        news: "sample news"
+    }, {
+        date: "31-12-2018",
+        news: "sample news"
+    }
+];
+const NewsStyle = styled.div`
+
+`;
+
 const NewsPage = () => (
     <Layout>
         <BackgroundStyle>
             <MenuWrapper/>
+            <News/>
         </BackgroundStyle>
     </Layout>
 );
