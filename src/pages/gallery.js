@@ -24,7 +24,7 @@ import pic19 from "../images/gallery/19.jpg";
 import pic20 from "../images/gallery/20.jpg";
 
 const BackgroundStyle = styled.div`
-  height:100%;
+  height:98%;
   width:100%; 
   display: flex;
   flex-direction: column;
@@ -43,16 +43,22 @@ const Image = styled.div`
     margin: 5px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(${({src})=> src});
+    background-image: url(${({src}) => src});
     background-position: center;
     border-radius: 5px;
-    animation:fade-in 1s cubic-bezier(.39,.575,.565,1.000) ${({showDelay})=> showDelay}s both;
+    animation:fade-in 1s cubic-bezier(.39,.575,.565,1.000) ${({showDelay}) => showDelay}s both;
     @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
-    transition:width 500ms;
+    transition:all  500ms;
+    filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
     transition-delay: 2s;
     -webkit-transition:width 500ms;
     -moz-transition:width 500ms;
     :hover {
+       -webkit-filter: grayscale(0%);
+       -moz-filter: grayscale(0%);
+       filter: grayscale(0%);
        width:100%;
    }
 `;

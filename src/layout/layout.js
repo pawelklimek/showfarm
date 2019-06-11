@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
   body {
   padding: 0;
   margin: 0;
+  overflow:hidden;
   font-family: "Montserrat", serif;
   color: ${({theme}) => theme.colors.black} 
   background: ${({theme}) => theme.colors.white} 

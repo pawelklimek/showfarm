@@ -8,7 +8,7 @@ import smallImage from "../images/welcome/dog.jpg";
 import headerImage from "../images/welcome/puppyDark.jpg";
 
 const BackgroundStyle = styled.div`
-  height:100%;
+  height:98%;
   width:100%; 
   display: flex;
   flex-direction: column;
@@ -35,7 +35,6 @@ const Panel = styled.div`
       margin: 5px;
       width: 700px;
       min-height: 300px;
-      -webkit-background-size: cover;
       border-radius: 3px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
       transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -59,7 +58,7 @@ const HeaderStyle = styled(Panel)`
       flex: 1;
       display: flex;
       flex-direction: column;
-      background: url(${(headerImage)})  no-repeat;
+      background: url(${(headerImage)})  no-repeat center;
       -webkit-background-size: cover;
       animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) .3s both;
       @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
@@ -67,7 +66,7 @@ const HeaderStyle = styled(Panel)`
 
 const SmallImageStyle = styled(Panel)`; 
       flex: 3;
-      background: url(${(smallImage)})  no-repeat;
+      background: url(${(smallImage)})  no-repeat center;
       -webkit-background-size: cover;
       animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .2s both};
       @keyframes slide-in-bottom{0%{transform:translateY(1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
@@ -75,7 +74,7 @@ const SmallImageStyle = styled(Panel)`;
 
 const BigImageStyle = styled(Panel)`
       flex: 2;
-      background: url(${(bigImg)})  no-repeat;
+      background: url(${(bigImg)})  no-repeat center;
       -webkit-background-size: cover;
       animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both;
       @keyframes slide-in-right{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
@@ -83,7 +82,7 @@ const BigImageStyle = styled(Panel)`
 
 const DescriptionStyle = styled(Panel)`
       flex: 2;
-      background: url(${(puppyImg)}) no-repeat;
+      background: url(${(puppyImg)}) no-repeat center;
       -webkit-background-size: cover;
       animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) .1s both;
       @keyframes slide-in-right{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
@@ -96,11 +95,16 @@ const IndexPage = () => (
             <WrapperRow>
                 <WrapperColumn direction={"flex-end"}>
                     <HeaderStyle>
-                        <HeaderTextStyle showDelay={1.0} showSpeed={0.5} fontWeight={200} fontSize={35}>SHOWFARM FCI</HeaderTextStyle>
-                        <HeaderTextStyle showDelay={1.2} showSpeed={0.5} fontWeight={200} fontSize={15}>Witam Serdecznie na stronie</HeaderTextStyle>
-                        <HeaderTextStyle showDelay={1.4} showSpeed={0.5} fontWeight={200} fontSize={15}>Domowej hodowli owaczarków australijskich</HeaderTextStyle>
-                        <HeaderTextStyle showDelay={1.6} showSpeed={0.5} fontWeight={100} fontSize={15}>Zapraszam do kontaku</HeaderTextStyle>
-                        <HeaderTextStyle showDelay={1.8} showSpeed={1} fontWeight={100} fontSize={15}>Karolina Klimek</HeaderTextStyle>
+                        <HeaderTextStyle showDelay={1.0} showSpeed={0.5} fontWeight={200} fontSize={35}>SHOWFARM
+                            FCI</HeaderTextStyle>
+                        <HeaderTextStyle showDelay={1.2} showSpeed={0.5} fontWeight={200} fontSize={15}>Witam Serdecznie
+                            na stronie</HeaderTextStyle>
+                        <HeaderTextStyle showDelay={1.4} showSpeed={0.5} fontWeight={200} fontSize={15}>Domowej hodowli
+                            owaczarków australijskich</HeaderTextStyle>
+                        <HeaderTextStyle showDelay={1.6} showSpeed={0.5} fontWeight={100} fontSize={15}>Zapraszam do
+                            kontaku</HeaderTextStyle>
+                        <HeaderTextStyle showDelay={1.8} showSpeed={1} fontWeight={100} fontSize={15}>Karolina
+                            Klimek</HeaderTextStyle>
                     </HeaderStyle>
                     <SmallImageStyle/>
                 </WrapperColumn>

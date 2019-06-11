@@ -38,7 +38,7 @@ const Panel = styled.div`
 
 const BigImageStyle = styled(Panel)`
       flex: 2;
-      background: url(${(contactImage)})  no-repeat;
+      background: url(${(contactImage)})  no-repeat center;
       -webkit-background-size: cover;
       animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both;
       @keyframes slide-in-right{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
@@ -46,7 +46,7 @@ const BigImageStyle = styled(Panel)`
 
 const ContactStyle = styled(Panel)`
       flex: 2;
-      background: url(${(contactImageBlack)})  no-repeat;
+      background: url(${(contactImageBlack)}) no-repeat center;
       -webkit-background-size: cover;
       animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both;
       @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
