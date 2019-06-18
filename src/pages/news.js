@@ -10,9 +10,9 @@ const BackgroundStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: stretch;
-`
+`;
 
-const NewsStyle = styled.div``
+const NewsStyle = styled.div``;
 
 const NewsPage = () => (
   <Layout>
@@ -21,6 +21,6 @@ const NewsPage = () => (
       <News />
     </BackgroundStyle>
   </Layout>
-)
+);
 
 export default NewsPage
